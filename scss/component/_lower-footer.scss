@@ -1,0 +1,25 @@
+.lower-footer {
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    margin: 0 10px;
+    width: 1020px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__text {
+    color: $color-grey;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  #footer-link {
+    text-decoration: underline;
+  }
+}

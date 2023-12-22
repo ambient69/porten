@@ -1,0 +1,237 @@
+/* Медиа-запрос для экранов с максимальной шириной 1300px */
+@media (max-width: 1300px) {
+  .season-catalog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__season {
+      margin: 40px 10px 100px 10px;
+    }
+
+    &__container-bot {
+      display: flex;
+      margin-top: 50px;
+    }
+
+    &__block {
+      margin: 10px;
+    }
+
+    &__image {
+      background-color: #191b1c;
+      width: 300px;
+      height: 300px;
+      padding: 15px;
+    }
+
+    &__catalog {
+      margin-bottom: 40px;
+    }
+  }
+
+  .collection {
+    &__background {
+      display: none;
+    }
+
+    &__main {
+      margin: 0 10px 0 10px;
+    }
+  }
+
+  .articles {
+    &__image {
+      display: none;
+    }
+
+    &__container {
+      max-width: 653px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__article {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0 0 0;
+      margin: 0 20px 0 20px;
+      max-width: 650px;
+    }
+  }
+
+  .partners {
+    margin: 90px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      font-family: 'Playfair Display';
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 48px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    &__underline {
+      border-bottom: 2px solid $color-white;
+      width: 120px;
+      margin-bottom: 60px;
+    }
+
+    &__block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__company {
+      margin: 15px;
+      max-width: 370px;
+      max-height: 150px;
+    }
+  }
+
+  .footer {
+    #first-footer-block {
+      display: none;
+    }
+  }
+}
+
+/* Медиа-запрос для экранов с максимальной шириной 750px */
+@media (max-width: 750px) {
+  /* Стили для body и .menu-icon */
+  body._lock {
+    overflow: hidden;
+  }
+
+  .menu-icon {
+    z-index: 7;
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin-right: 20px;
+    width: 35px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after,
+  .menu-icon span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    content: '';
+  }
+
+  .menu-icon::before {
+    top: 0;
+  }
+
+  .menu-icon::after {
+    bottom: 0;
+  }
+
+  .menu-icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu-icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu-icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .menu-icon._active::after {
+    top: 50%;
+    transform: rotate(45deg) translate(0px, -50%);
+  }
+
+  /* Стили для .header */
+  .header {
+    justify-content: space-between;
+
+    &__part {
+      z-index: 5;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-black;
+      transition: left 0.3s ease 0s;
+      overflow: active;
+    }
+
+    &__button {
+      width: 100%;
+      height: 100px;
+    }
+
+    &__part._active {
+      left: 0;
+    }
+  }
+  .season-catalog__container-bot {
+    flex-direction: column;
+    width: 400px;
+    .season-catalog__block {
+    }
+  }
+
+  .articles {
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .partners {
+    &__company {
+      margin-right: 15px;
+      max-width: 260px;
+      max-height: 120px;
+    }
+  }
+
+  .footer {
+    &__block {
+      margin: 10px 10px;
+    }
+
+    &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__submit {
+      margin: 3px;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 30%;
+}

@@ -1,0 +1,91 @@
+.footer {
+  background: url(../img/footer_background.png) center no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    max-width: 1100px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 25px;
+    max-width: 350px;
+  }
+
+  &__button-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+
+  &__button {
+    background: #0f0f0f;
+    padding: 10px 20px 10px 20px;
+    color: $color-white;
+    margin: 0 6px 20px 0;
+  }
+
+  &__button:hover {
+    background: $color-white;
+    color: $color-black;
+    transition: 0.5s;
+  }
+
+  &__input {
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    max-width: 210px;
+    color: $color-white;
+  }
+
+  &__input::placeholder {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__submit {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    margin: -3px;
+    background: #0f0f0f;
+    padding: 10px 20px 10px 20px;
+    color: $color-white;
+  }
+
+  &__submit:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,61 @@
+.header {
+  margin: 0 0 0 10px;
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  &__wrapper {
+    background-color: $color-black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    max-width: 1020px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__part {
+    display: flex;
+  }
+
+  &__logo {
+    width: 105px;
+    height: 50px;
+  }
+
+  &__button {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background: transparent;
+    color: $color-grey;
+    padding: 31px 15px;
+    height: 100%;
+  }
+
+  &__button:hover {
+    color: $color-white;
+    transition: 0.5s;
+  }
+
+  &__button.active {
+    color: $color-white;
+    background-color: #1f1f1f;
+  }
+
+  &__picto {
+    margin: 0 15px 0 20px;
+  }
+
+  &__picto:hover {
+    cursor: pointer;
+  }
+}

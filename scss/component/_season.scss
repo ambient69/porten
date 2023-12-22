@@ -1,0 +1,98 @@
+.season-catalog {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+
+  &__season {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1040px;
+  }
+
+  &__season-title {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__underline {
+    border-bottom: 2px solid $color-white;
+    width: 120px;
+    margin-top: 50px;
+  }
+
+  &__container-bot {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__block {
+    margin: 20px;
+  }
+
+  //add size
+  &__image {
+    background-color: #191b1c;
+    max-width: 215px;
+    max-height: 264px;
+    padding: 20px;
+  }
+
+  &__name {
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 25px 0 10px 0;
+  }
+
+  &__price {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 880px;
+    height: 730px;
+    background: url('../img/Man_sitting_in_chair.png') center;
+  }
+
+  &__container {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__catalog-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+  }
+
+  &__catalog-underline {
+    border-bottom: 2px solid $color-white;
+    width: 120px;
+    margin: 30px 0;
+  }
+}

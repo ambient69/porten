@@ -1,0 +1,53 @@
+.landing-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__wrapper {
+    background: url('../img/Man_with_backpack_bckgrond.png') center;
+    width: 100%;
+    height: 810px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__outer-line {
+    width: 320px;
+    height: 320px;
+    outline: 4px solid $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 185px;
+    height: 85px;
+  }
+
+  &__underline {
+    border-bottom: 2px solid $color-white;
+    width: 175px;
+    margin-top: -10px;
+  }
+
+  &__town {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+
+  &__text {
+    margin-top: 80px;
+    max-width: 730px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+}

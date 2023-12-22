@@ -1,0 +1,23 @@
+@import './base/reset';
+@import './base/fonts';
+@import './base/base';
+
+// PAGE
+@import './component/upper-header';
+@import './component/header';
+@import './component/description';
+@import './component/season';
+@import './component/collection';
+@import './component/catalog';
+@import './component/wrapper-bottom';
+@import './component/articles';
+@import './component/partners';
+@import './component/footer';
+@import './component/lower-footer';
+//PAGE
+
+@import '..//scss/media';
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }

@@ -1,0 +1,35 @@
+.partners {
+  margin: 90px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__underline {
+    border-bottom: 2px solid $color-white;
+    width: 120px;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__company {
+    margin-right: 30px;
+    max-width: 370px;
+    max-height: 150px;
+  }
+}

@@ -1,0 +1,37 @@
+//COLORS
+$color-black: #0f0f0f;
+$color-white: #ffffff;
+$color-light-grey: #d0d0d0;
+$color-grey: #969696;
+
+body {
+  font-family: 'PT Sans';
+  overflow-x: hidden;
+  color: $color-white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  background-color: #000;
+}
+
+.button-transparent {
+  text-transform: uppercase;
+  background: transparent;
+  color: $color-white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 15px 30px;
+  text-align: center;
+  border: 2px solid $color-white;
+}
+
+.button-transparent:hover {
+  color: $color-black;
+  background-color: $color-white;
+  transition: 0.5s;
+}
